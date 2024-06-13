@@ -1,5 +1,7 @@
 package array_and_array_list;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class ArraysQuestions {
@@ -12,23 +14,27 @@ public class ArraysQuestions {
 
 		switch (number) {
 		case 1: {
-			QuestionOne();
+			questionOne();
 			break;
 		}
 		case 2: {
-			QuestionTwo();
+			questionTwo();
 			break;
 		}
 		case 3: {
-			QuestionThree();
+			questionThree();
 			break;
 		}
 		case 4: {
-			QuestionFour();
+			questionFour();
 			break;
 		}
 		case 5: {
-			QuestionFive();
+			questionFive();
+			break;
+		}
+		case 6: {
+			questionSix();
 			break;
 		}
 		default:
@@ -37,7 +43,7 @@ public class ArraysQuestions {
 		scanner.close();
 	}
 
-	public static void QuestionOne() {
+	public static void questionOne() {
 
 		// Given an integer array nums of length n, you want to create an array ans of
 		// length 2n
@@ -60,7 +66,7 @@ public class ArraysQuestions {
 		}
 	}
 
-	public static void QuestionTwo() {
+	public static void questionTwo() {
 
 		// Given a zero-based permutation nums (0-indexed), build an array ans
 		// of the same length where ans[i] = nums[nums[i]] for each 0 <= i < nums.length
@@ -81,7 +87,7 @@ public class ArraysQuestions {
 		}
 	}
 
-	public static void QuestionThree() {
+	public static void questionThree() {
 
 		// Given an array of integers nums, return the number of good pairs.
 		// A pair (i, j) is called good if nums[i] == nums[j] and i < j.
@@ -101,7 +107,7 @@ public class ArraysQuestions {
 		System.out.println("Good Pair Count is :: " + goodPair);
 	}
 
-	public static void QuestionFour() {
+	public static void questionFour() {
 
 		// There is a programming language with only four operations and one variable X:
 		// ++X and X++ increments the value of the variable X by 1.
@@ -124,7 +130,7 @@ public class ArraysQuestions {
 		System.out.println("final Value is :: " + finalValue);
 	}
 
-	public static void QuestionFive() {
+	public static void questionFive() {
 
 		// Given the array nums consisting of 2n elements in the form
 		// [x1,x2,...,xn,y1,y2,...,yn].
@@ -149,6 +155,31 @@ public class ArraysQuestions {
 		}
 
 		for (int a : ans)
+			System.out.print(a + " ");
+
+	}
+
+	public static void questionSix() {
+
+		// You are given a 0-indexed array of strings words and a character x.
+		// Return an array of indices representing the words that contain the character
+		// x.
+		// Note that the returned array may be in any order.
+
+		String[] words = { "abc", "bcd", "aaaa", "cbc" };
+		char x = 'a';
+
+		List<Integer> result = new ArrayList<>();
+		int index = 0;
+		for (String word : words) {
+
+			if (word.contains(String.valueOf(x))) {
+				result.add(index);
+			}
+			index++;
+		}
+
+		for (int a : result)
 			System.out.print(a + " ");
 
 	}
