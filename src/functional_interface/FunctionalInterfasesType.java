@@ -1,4 +1,4 @@
-package array_and_array_list;
+package functional_interface;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package array_and_array_list;
+package encryptions;
 
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
