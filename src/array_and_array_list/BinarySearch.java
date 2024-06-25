@@ -17,7 +17,7 @@ public class BinarySearch {
 
 	public static Integer getIndexOfElement(int[] arr, int element) {
 
-		// here we can use wile loop
+		// here we can use while loop
 		int start = 0;
 		int end = arr.length - 1;
 		while (start <= end) {
