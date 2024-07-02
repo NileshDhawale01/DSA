@@ -1,4 +1,4 @@
-package array_and_array_list;
+package array_and_array_list.search;
 
 public class LinearSearch {
 
