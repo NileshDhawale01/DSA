@@ -1,9 +1,0 @@
-Sorting
----------------------
-1. bubble sort
-
-2. selection sort 
-	in selection sort first we find out max or min element and put it in it's correct index using swapping
-
-3. insertion sort
-	in insertion basically we use shifting
