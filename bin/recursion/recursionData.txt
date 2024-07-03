@@ -1,0 +1,10 @@
+To Identify Question follow steps
+	1. Identify if you can break down problem into smaller problems
+	2. Write down recurrence relation if needed
+	3. Draw a recursion tree
+	4. About tree
+		a. see flow of function and how they are getting in stack
+		b. Identify and focus on left tree calls and right tree calls
+		c. draw a tree and pointer again and again using pen and paper
+		d. use debugger to seed flow
+	5. See the how values are return at each step
