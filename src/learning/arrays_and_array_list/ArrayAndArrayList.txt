@@ -1,0 +1,12 @@
+Array And ArrayList
+----------------------------
+Why Array : (Collection of similar Data)
+			Store Multiple data which have same type
+			
+			
+	int[] arr = new int[5];
+	|________| |__________|
+	    |           |
+	 Declaration  Initialization
+	 
+	 

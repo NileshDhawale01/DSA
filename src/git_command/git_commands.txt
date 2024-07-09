@@ -1,0 +1,34 @@
+-- Create Local Repository
+		git init
+
+-- Add Remote Repository
+	git remote add origin https://github.com/NileshDhawale01/test.git
+
+-- Check Status
+	git status
+	
+-- Push Code to Git
+	git add .
+	git commit -m 'comment'
+	git push origin branchName
+	
+-- Pull Code From Git
+	git pull origin branchName
+	
+-- Create New Branch
+	git branch newBranchName
+	
+	-- go in newBranch
+		git checkout newBranchName
+	
+	-- Merge Code to New Branch (make sure you are in branch where you want to merge code) -- donarBranchName mains the branch where you want to get code (May be theire are other ways)
+		git merge donarBranchName
+		git add .
+		git commit -m 'merging code'
+		git push origin newBranch
+		
+-------------------------------------------------------------
+-- Clone Repository
+	git clone -b branchName repositoryURL
+	
+
